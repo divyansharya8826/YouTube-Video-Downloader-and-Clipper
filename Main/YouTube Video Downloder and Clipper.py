@@ -1,12 +1,12 @@
 from tkinter import (Button, Canvas, PhotoImage, StringVar, Tk, ttk , filedialog, OptionMenu,Text)
-from moviepy.editor import VideoFileClip
+from moviepy.editor import VideoFileClip,ffmpeg_tools
 from pytube import YouTube
 root = Tk()
 root.geometry("800x600")
 root.resizable(width=1024,height=768)  # type: ignore
 root.title("YouTube Video Cliper")
-bg = PhotoImage(file = "Z:\images\i.ppm")
-bg2 = PhotoImage(file = "Z:\images\youtubevanced.png")
+bg = PhotoImage(file = "Divyansh/Python/Youtube Video Downloader and Clipper/Images/i.ppm")
+bg2 = PhotoImage(file = "Divyansh/Python/Youtube Video Downloader and Clipper/Images/youtubevanced.png")
 canvas1 = Canvas(root,width=1024,height=768)
 canvas1.pack(fill = "both", expand = True)
 canvas1.create_image(0 , 0 , image = bg , anchor = "nw")
