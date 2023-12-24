@@ -1,6 +1,8 @@
-from tkinter import (Button, Canvas, PhotoImage, StringVar, Tk, ttk , filedialog, OptionMenu,Text)
+from tkinter import (Button, Canvas, PhotoImage, StringVar, Tk, ttk , filedialog, OptionMenu)
 from moviepy.editor import VideoFileClip,ffmpeg_tools
 from pytube import YouTube
+
+
 root = Tk()
 root.geometry("800x600")
 root.resizable(width=1024,height=768)  # type: ignore
